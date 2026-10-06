@@ -243,7 +243,7 @@
  * chat.js — Groq Chat with streaming, sentence splitting, and JSON emotion parsing
  */
 
-import { API_URL } from './config.js';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const getPasscode = () => localStorage.getItem('doraemon_passcode') || '';
 const MAX_HISTORY = 10;

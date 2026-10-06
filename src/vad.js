@@ -201,7 +201,7 @@
  * and sends it to the FastAPI backend via /api/stt.
  */
 
-import { API_URL } from './config.js';
+const API_URL = import.meta.env.VITE_API_URL;
 
 const getPasscode = () =>
   localStorage.getItem('doraemon_passcode') || '';
