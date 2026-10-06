@@ -1,0 +1,19 @@
+{
+  "name": "doraemon",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal talking Doraemon AI companion for Sanaa",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "cd server && uvicorn main:app --reload --port 8000",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:server\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^0.21.0"
+  }
+}
